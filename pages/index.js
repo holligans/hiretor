@@ -1,7 +1,9 @@
-const Index = () => (
-  <div>
-    <p>Hello Next.js</p>
-  </div>
-);
+import React from "react";
+import styled from "styled-components";
 
-export default Index;
+const Title = styled.h1`
+  font-size: 50px;
+  color: ${({ theme }) => theme.colors.primary};
+`;
+
+export default () => <Title>My page</Title>;
